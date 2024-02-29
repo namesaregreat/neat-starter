@@ -16,6 +16,7 @@ collections:
     name: "testimonial"
     folder: "src/testimonials"
     create: true
+    slug: '{{pageName}}'
     editor:
       preview: false
     fields:
