@@ -1,0 +1,84 @@
+---
+layout: 'base.html'
+description: 'Meta description for the page'
+metaTitle: 'Title that shows up on google searches'
+tagTitle: 'Contact'
+preloadImg: '/images/Landing2-1920w.webp'
+preloadCSS: '/css/contact.css'
+permalink: 'contact/'
+eleventyNavigation:
+    key: Contact
+    order: 700
+---
+
+<!-- Enter html code below -->
+
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
+
+<section id="int-hero">
+  <h1 id="home-h">Contact Us</h1>
+  {% image './src/images/Landing2.jpg', 'cabinets', '', 'lazy', '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px'%}
+</section>
+
+<!-- ============================================ -->
+<!--                Contact Form                  -->
+<!-- ============================================ -->
+
+<section id="cs-contact">
+  <div class="cs-container">
+    <form id="cs-form" 
+          name="Contact Form" 
+          method="post" 
+          netlify 
+          data-netlify="true"
+          netlify-honeypot="bot-field">
+      <div class="cs-content">
+        <span class="cs-topper">Contact</span>
+        <h2 class="cs-title">Reach Out Today</h2>
+        <p class="cs-text">
+            Edmonton Casino Advisor helps charitable groups organize successful fundraisers. If you have a specific question or request, please get in touch with us in Edmonton - we will be happy to assist you. If your group has not had a casino licence before, you can contact us to help you determine your eligibility.
+        </p>
+      </div>
+      <label>
+                Name
+                <input required type="text" id="name" name="name" placeholder="Name">
+      </label>
+      <label>
+                Organization
+                <input required type="text" id="organization" name="organization" placeholder="Organization">
+      </label>
+      <label>
+                Email
+                <input required type="text" id="email" name="email" placeholder="Email">
+      </label>
+      <label>
+                Phone
+                <input required type="text" id="phone" name="phone" placeholder="Phone">
+      </label>
+      <label class="cs-label-message">
+                Message
+                <textarea required name="Message" id="message" placeholder="Write message..."></textarea>
+      </label>
+      <div class="captcha">
+        <div data-netlify-recaptcha="true" ></div>
+      </div>
+      <button class="cs-button-solid" type="submit">Submit Message</button>
+    </form>
+    <div class="cs-right-section">
+      <!--Email-->
+      <span class="cs-header">Email</span>
+      <a class="cs-link" href="mailto:info@EdmontonCasinoAdvisor.ca">info@EdmontonCasinoAdvisor.ca</a>
+      <!--Phone-->
+      <span class="cs-header">Phone</span>
+      <a class="cs-link" href="tel:780-707-3488">(780) 707-3488</a>
+      <!--Address-->
+      <span class="cs-header">Fax</span>
+      <a class="cs-link" href="tel:1-801-937-5396">1-801-937-5396</a>
+
+      <!-- Background Image-->
+      {% image './src/images/contact-side.jpg', 'ace card', 'cs-bg-picture', 'lazy'%}
+    </div>
+  </div>
+</section>
