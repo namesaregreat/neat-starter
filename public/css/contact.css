@@ -85,7 +85,7 @@
       height: 4rem;
       margin-top: 0.25rem;
       padding-left: 1.25rem;
-      border: 1px solid #B4B2C7;
+      border: 1px solid #805d0d;
       border-radius: 0.5rem;
       /* prevents border & padding from affecting height */
       box-sizing: border-box;
@@ -95,6 +95,13 @@
     #cs-contact #cs-form textarea:hover {
       border: 1px solid var(--primary);
     }
+    #cs-contact #cs-form input:focus,
+    #cs-contact #cs-form textarea:focus {
+      outline:0px !important;
+      -webkit-appearance:none;
+      box-shadow: 0.5px 0.5px 0.5px 0.5px var(--primary) !important;
+    }
+
     #cs-contact #cs-form textarea {
       font-family: inherit;
       padding-top: 1.25rem;

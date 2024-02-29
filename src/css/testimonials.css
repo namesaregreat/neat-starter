@@ -42,14 +42,17 @@
   #reviews .testimonials .block:nth-child(n+2) {
     padding: 1.5em;
   }
-  #reviews .testimonials .block:nth-child(2), .testimonials .block:nth-child(4) {
+  #reviews .testimonials .block:nth-child(6n+2), .testimonials .block:nth-child(6n+4) {
     background-color: #ba9956;
   }
-  #reviews .testimonials .block:nth-child(3), .testimonials .block:nth-child(5) {
+  #reviews .testimonials .block:nth-child(6n+3), .testimonials .block:nth-child(6n+5) {
     background-color: #161616;
   }
-  #reviews .testimonials .block:nth-child(6) {
+  #reviews .testimonials .block:nth-child(6n+1), .testimonials .block:nth-child(6n+6) {
     background-color: #805d0d;
+  }
+  #reviews .testimonials .block:nth-child(1) {
+    background-color: rgba(0,0,0,0);
   }
   #reviews .testimonials .block .quote {
     margin: 0;
@@ -59,7 +62,7 @@
     color: #fff;
   }
   
-  #reviews .testimonials .block:nth-child(3), .testimonials .block:nth-child(5) p {
+  #reviews .testimonials .block:nth-child(3n), .testimonials .block:nth-child(5n) p {
     color: #444;
   }
   
