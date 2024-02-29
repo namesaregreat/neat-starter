@@ -1,0 +1,69 @@
+---
+layout: 'base.html'
+description: "Meta description for the page"
+metaTitle: 'Title that shows up on google searches'
+tagTitle: 'About'
+preloadImg: '/images/Landing2-1920w.webp'
+preloadCSS: '/css/about.css'
+permalink: 'about/'
+eleventyNavigation:
+    key: About Us
+    order: 200
+---
+
+<!-- Enter html code below -->
+
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
+
+<section id="int-hero">
+  <h1 id="home-h">About Us</h1>
+  {% image './src/images/AboutUs.webp', 'cabinets', '', 'lazy', '(max-width: 850px) 850px, 1920px'%}
+</section>
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="sbs">
+  <div class="cs-container">
+    <!-- Left Image Section -->
+    <div class="cs-left">
+      {% image './src/images/Cristian.jpg', 'Cristian Patilea', 'cs-picture cs-picture-only', 'lazy'%}
+    </div>
+    <!-- Right Content Section-->
+    <div class="cs-right">
+      <span class="cs-topper">About Us</span>
+      <h2 class="cs-title">About Our Company</h2>
+      <p class="cs-text">
+        Edmonton Casino Advisor was established in March 2016. Cristian Patilea, the proprietor, is an independent 
+        casino advisor registered with the Alberta Gaming, Liquor and Cannabis (AGLC). Cristian started his career 
+        in the gaming industry in 1993. After working for a few years in casinos in Romania, he was hired by 
+        Carnival Cruise Lines and worked on the "Fun Ships" from 1997 to 2000. He immigrated to Canada in 2001. 
+      </p>
+      <p class="cs-text">
+        If you are looking for professional assistance with your organization’s casino fundraiser, look no further! 
+        Edmonton Casino Advisor proudly provides casino advisor services to licenced charitable groups in Edmonton, 
+        St. Albert, Camrose and Red Deer, Alberta. 
+      </p>
+      <div class="cs-flex-group">
+        <p class="cs-flex-p">
+          With more than 25 years in the industry, we can assure you that your casino event will run smoothly and 
+          your volunteers will have a fun and amazing experience.
+        </p>
+        <span class="cs-name">Cristian Patilea</span>
+        <span class="cs-job">Founder</span>
+        <img
+          class="cs-quote-icon"
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg"
+          alt="gavel"
+          width="136"
+          height="77"
+/>
+      </div>
+    </div>
+  </div>
+</section>
