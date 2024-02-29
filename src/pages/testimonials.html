@@ -1,0 +1,49 @@
+---
+layout: 'base.html'
+description: 'Meta description for the page'
+metaTitle: 'Non-Profit Testimonials'
+tagTitle: 'Testimonials'
+preloadImg: '/images/Volunteers-1920w.webp'
+preloadCSS: '/css/reviews.css'
+permalink: 'Testimonials/'
+eleventyNavigation:
+    key: Testimonials
+    order: 500
+---
+<!-- Enter html code below -->
+
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
+
+<section id="int-hero">
+  <h1 id="home-h">Testimonials</h1>
+  {% image './src/images/Volunteers.jpg', 'cabinets', '', 'lazy', '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px'%}
+</section>
+
+<!-- ============================================ -->
+<!--                  Reviews                     -->
+<!-- ============================================ -->
+
+<section id="reviews">
+  <div class="testimonials">
+
+    <div class="block">
+      <h2 class="cs-title">Testimonials</h2>
+    </div>
+    {% if collections.testimonial | length == 0 %}
+      <h1>No Testimonials</h1>
+    {% endif %}
+    {%- for testimonial in collections.testimonial -%}
+      <blockquote class="block">
+        <p class="org">{{ testimonial.data.organization }}</p>
+        <p class="quote">{{ testimonial.data.quote }}</p>
+        <footer>
+          <cite>
+            <span>{{ testimonial.data.author }}</span>
+          </cite>
+        </footer>
+      </blockquote>
+    {%- endfor -%}
+  </div>
+</section>

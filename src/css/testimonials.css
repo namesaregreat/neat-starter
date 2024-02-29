@@ -1,0 +1,99 @@
+/*-- -------------------------- -->
+<---           Reviews          -->
+<--- -------------------------- -*/
+#reviews * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  #reviews body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+  }
+  
+  #reviews .testimonials {
+    margin: 4em auto;
+    width: 1100px;
+    max-width: 90%;
+  }
+  #reviews .testimonials::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+  #reviews .testimonials .block {
+    display: block;
+    margin: 0;
+  }
+  @media only screen and (min-width: 650px) {
+    #reviews .testimonials .block {
+      float: left;
+      width: 50%;
+      height: 350px;
+    }
+  }
+  @media only screen and (min-width: 1000px) {
+    #reviews .testimonials .block {
+      width: 33.3333333333%;
+      height: 325px;
+    }
+  }
+  #reviews .testimonials .block:nth-child(n+2) {
+    padding: 1.5em;
+  }
+  #reviews .testimonials .block:nth-child(2), .testimonials .block:nth-child(4) {
+    background-color: #ba9956;
+  }
+  #reviews .testimonials .block:nth-child(3), .testimonials .block:nth-child(5) {
+    background-color: #161616;
+  }
+  #reviews .testimonials .block:nth-child(6) {
+    background-color: #805d0d;
+  }
+  #reviews .testimonials .block .quote {
+    margin: 0;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 300;
+    color: #fff;
+  }
+  
+  #reviews .testimonials .block:nth-child(3), .testimonials .block:nth-child(5) p {
+    color: #444;
+  }
+  
+  #reviews .testimonials .block cite span {
+    display: block;
+    margin-top: 2em;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    color: #fff;
+  }
+  
+  #reviews .testimonials .block .org {
+    display: block;
+    font-size: 16px;
+    font-weight: 800;
+    font-style: italic;
+    color: #fff5d0;
+  }
+  
+  @media only screen and (min-width: 0em) {
+    #reviews .cs-title {
+      font-size: clamp(1.9375rem, 2vw, 3.0625rem);
+      font-weight: 900;
+      line-height: 1.2em;
+      text-align: left;
+      max-width: 50rem;
+      margin: 0 auto 1rem;
+      color: var(--headerColor);
+      position: relative;
+    }
+  }
+  @media only screen and (min-width: 0em) {
+    body.dark-mode #reviews .cs-title {
+      color: var(--bodyTextColorWhite);
+    }
+  }
