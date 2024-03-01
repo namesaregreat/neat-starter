@@ -99,6 +99,7 @@
     #cs-contact #cs-form textarea:focus {
       outline:0px !important;
       -webkit-appearance:none;
+      appearance: none;
       box-shadow: 0.5px 0.5px 0.5px 0.5px var(--primary) !important;
     }
 

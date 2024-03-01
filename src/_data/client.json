@@ -1,0 +1,16 @@
+{
+  "name": "Edmonton Casino Advisor",
+  "tagline": "Fundraise with the Ace!",
+  "email": "info@EdmontonCasinoAdvisor.ca",
+  "phone": "780-707-3488",
+  "phoneFormatted": "(780) 707-3488",
+  "fax": "1-801-937-5396",
+  "address": {
+    "lineOne": "15624 44 St NW",
+    "city": "Edmonton",
+    "county": "AB",
+    "postcode": "T5Y 3H1",
+    "mapLink": "https://maps.app.goo.gl/1Bh51LHwaqgk39n79"
+  },
+  "domain": "edmontoncasinoadvisor.ca"
+}

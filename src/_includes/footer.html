@@ -40,16 +40,16 @@
                         <h2>Contact</h2>
                     </li>
                     <li>
-                        <a href="/contact">15624 44 St NW<br>Edmonton, AB T5Y 3H1</a>
+                        <a href="/contact">{{ client.address.lineOne }}<br>{{ client.address.city }}, {{ client.address.county }} {{ client.address.postCode }}</a>
                     </li>
                     <li>
-                        <a href="tel:780-707-3488">T: (780) 707-3488</a>
+                        <a href="tel:{{ client.phone }}">T: {{ client.phoneFormatted }}</a>
                     </li>
                     <li>
-                        <a href="tel:1-801-937-5396">Fax: 1-801-937-5396</a>
+                        <a href="tel:{{ client.fax }}">Fax: {{ client.fax }}</a>
                     </li>
                     <li>
-                        <a href="mailto:info@EdmontonCasinoAdvisor.ca">Click to Email</a>
+                        <a href="mailto:{{ client.email }}">Click to Email</a>
                     </li>
                 </ul>
             </div>
@@ -58,7 +58,7 @@
 
     <div class="credit">
         <span>Designed and Hand Coded by</span>
-        <a href="" target="_blank" rel="noopener">Edmonton Casino Advisors</a>
+        <a href="" target="_blank" rel="noopener">{{ client.name }}</a>
         <span class="copyright"> Copyright 2024 - Present</span>
     </div>
 </footer>

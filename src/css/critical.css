@@ -280,7 +280,7 @@
       margin-bottom: 0;
     }
     .services .card picture {
-      background: var(--primary);
+      background: var(--primaryDark);
       width: 5.5em;
       height: 5.5em;
       display: flex;
@@ -351,4 +351,3 @@
       font-weight: bold;
     }
   }
-  

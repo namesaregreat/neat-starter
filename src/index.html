@@ -1,9 +1,9 @@
 ---
 layout: 'base.html'
-description: 'Edmonton Casino Advisor'
+description: 'Edmonton Casino Advisor Home'
 metaTitle: 'Edmonton Casino Advisor'
 tagTitle: 'Home'
-preloadImg: '/images/landing-1920w.webp'
+preloadImg: '/images/cards-1920w.webp'
 preloadCSS: '/css/local.css'
 permalink: '/'
 eleventyNavigation:
@@ -19,8 +19,8 @@ eleventyNavigation:
 <section id="hero">
   <div class="cs-container">
     <div class="cs-flex-group">
-      <span class="cs-topper">Edmonton Casino Advisors</span>
-      <h1 class="cs-title">Fundraise with the Ace!</h1>
+      <span class="cs-topper">{{ client.name }}</span>
+      <h1 class="cs-title">{{ client.tagline }}</h1>
       <p class="cs-text">
         Edmonton Casino Advisor was established in March 2016. Cristian Patilea, the proprietor, is an independent casino advisor registered with the Alberta Gaming, Liquor and Cannabis (AGLC).
       </p>

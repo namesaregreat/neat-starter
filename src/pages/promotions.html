@@ -3,7 +3,7 @@ layout: 'base.html'
 description: "Promotions"
 metaTitle: 'Promotions'
 tagTitle: 'Promotions'
-preloadImg: '/images/imageName.format'
+preloadImg: '/images/promotions-1920w.webp'
 preloadCSS: '/css/promotions.css'
 permalink: 'promotions/'
 eleventyNavigation:
@@ -20,3 +20,52 @@ eleventyNavigation:
     <h1 id="home-h">Promotions</h1>
     {% image './src/images/promotions.jpg', 'community group', '', 'lazy', '(max-width: 850px) 850px, 1920px'%}
 </section>
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="sbs">
+  <div class="cs-container">
+    <!-- Left Image Section -->
+    <div class="cs-left">
+      {% image './src/images/promo-cards.jpg', 'cart and gift', 'cs-picture cs-picture1', 'lazy'%}
+      {% image './src/images/promo-happy.jpg', 'playing cards', 'cs-picture cs-picture2', 'lazy'%}
+    </div>
+    <!-- Right Content Section-->
+    <div class="cs-right">
+      <h2 class="cs-title">Loyalty Program</h2>
+      <p class="cs-text">
+        We are proud to work with organizations like yours: groups of volunteers who have such a great impact on their communities. To show our appreciation for your commitment and our support to your worthy causes, we are introducing the first and only loyalty program designed for charitable casino events.
+      </p>
+      <p class="cs-text">
+        Hire us 5 consecutive times, and we will donate $500 to your organization at the completion of the 5th event. Contact us today and you’ll be one step closer to $500!
+      </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!--            Extra Content To Rank             -->
+<!-- ============================================ -->
+
+<section id="sbs-r">
+  <div class="cs-container">
+    <!-- Left Image Section -->
+    <div class="cs-left">
+      {% image './src/images/promo-aces.jpg', 'volunteer', 'cs-picture cs-picture1', 'lazy'%}
+      {% image './src/images/promo-volunteer.jpg', 'aces', 'cs-picture cs-picture2', 'lazy'%}
+    </div>
+    <!-- Right Content Section-->
+    <div class="cs-right">
+      <h2 class="cs-title">Referral Program</h2>
+      <p class="cs-text">
+        You work with us, and you are impressed by our services. Wouldn’t you want other groups like yours to have the same amazing experience? If so, why not refer them to Edmonton Casino Advisor? When you do that, both you and your referral will receive a $100 donation at the end of their first casino event with us. And the best part: there is no limit for how many groups you can refer – for each one of them you will receive $100!
+      </p>
+    </div>
+  </div>
+</section>
+<div class="promo-button">
+    <a href="/contact" class="button-solid">Contact to Learn More</a>
+</div>

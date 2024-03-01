@@ -9,7 +9,6 @@
     }
   }
 
-
   #faq {
     width: 100%;
     max-width: 69rem;
@@ -25,7 +24,7 @@
     margin-bottom: 10px;
   }
   #faq .cs-list {
-    color:#fff5d0;
+    color:var(--bodyTextColor);
     list-style:circle;
     margin-left:40px
   }
@@ -38,28 +37,30 @@
     font-weight: 700;
     padding: 2em;
     display: block;
+    color: var(--bodyTextColor);
     text-decoration: none;
-    color: #fff;
     -webkit-transition: background-color 0.5s ease-in-out;
     transition: background-color 0.5s ease-in-out;
   }
   .accordion dd {
-    background-color: #161616;
-    color:#fff5d0;
+    background-color: var(--backgroundColorLight);
+    color: var(--bodyTextColor);
     font-size: 1em;
     line-height: 1.5em;
   }
+
   .accordion dd > p{
     padding: 1em 2em 1em 2em;
-    color: #fff5d0;
+    color: var(--bodyTextColor);
   }
   
   .accordion dd > a,
   .accordion dd > div > a{
     padding: 0.5em 2em 0.5em 2.5em;
-    color: #ba9956;
+    color: var(--primaryDark);
     text-decoration: none;
   }
+
   .accordion dd > a:hover,
   .accordion dd > div > a:hover {
     text-decoration: underline;
@@ -67,7 +68,7 @@
   
   .accordion {
     position: relative;
-    background-color: #161616;
+    background-color: var(--backgroundColorLight);
   }
   
   .container {
@@ -77,8 +78,8 @@
   }
   
   .accordionTitle {
-    background-color: #161616;
-    border-bottom: 1px solid #161616;
+    background-color: var(--backgroundColorLight);
+    border-bottom: 1px solid var(--backgroundColorLight);
   }
   .accordionTitle:before {
     content: "+";
@@ -91,14 +92,14 @@
     transition: transform 0.3s ease-in-out;
   }
   .accordionTitle:hover {
-    background-color: #332504;
+    background-color: var(--primary);
   }
   
   .accordionTitleActive {
-    background-color:#805d0d;
+    background-color:var(--primary);
   }
   .accordionTitleActive:hover {
-    background-color: #805d0d;
+    background-color: var(--primary);
   }
 
   .accordionTitleActive:before {
@@ -131,7 +132,7 @@
   #faq .divider {
     margin: auto;
     flex-shrink: 0;
-    border-color: rgba(224, 224, 224, 1);
+    border-color: var(--bodyTextColor);
     border-width: 1px;
     border-style: solid none none none;
     max-width: 90%;
@@ -139,6 +140,53 @@
 
   #faq .d-flex {
     display: flex !important;
+  }
+
+  /* Dark Mode */
+  body.dark-mode #faq .divider {
+    border-color: var(--bodyTextColorWhite);
+  }
+
+  body.dark-mode .accordionTitle {
+    background-color: var(--backgroundColorDark);
+    border-bottom: 1px solid var(--backgroundColorDark);
+  }
+
+  body.dark-mode #faq .cs-list {
+    color: var(--bodyTextColorWhite);
+  }
+
+  body.dark-mode .accordion dt > a {
+    color: #fff;
+  }
+
+  body.dark-mode .accordion dd {
+    background-color: var(--backgroundColorDark);
+    color:var(--bodyTextColorWhite);
+  }
+
+  body.dark-mode .accordion dd > p{
+    color: var(--bodyTextColorWhite);
+  }
+  
+  body.dark-mode .accordion dd > a,
+  body.dark-mode .accordion dd > div > a{
+    color: var(--primary);
+  }
+
+  body.dark-mode .accordion {
+    background-color: var(--backgroundColorDark);
+  }
+
+  body.dark-mode .accordionTitle:hover {
+    background-color: var(--primaryDark);
+  }
+  
+  body.dark-mode .accordionTitleActive {
+    background-color:var(--primaryDark);
+  }
+  body.dark-mode .accordionTitleActive:hover {
+    background-color: var(--primaryDark);
   }
   
   #faq .flex-column {

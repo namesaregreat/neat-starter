@@ -5,11 +5,13 @@
 @media only screen and (min-width: 0em) {
     :root {
       --primary: #ba9956;
-      --primaryShade: #fff5d0;
+      --primaryShade: #ffd175;
       --primaryDark: #805d0d;
       --bodyTextColor: #161616;
       --bodyTextColorWhite: #fff5d0;
       --headerColor: #161616;
+      --backgroundColorLight: #fff;
+      --backgroundColorDark: #161616;
       /* 13px - 16px */
       --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
       /* 31px - 49px */
@@ -180,7 +182,7 @@
     }
     #navigation .logo {
       display: inline-block;
-      height: 1.875rem;
+      height: 3.25rem;
       width: auto;
     }
     #navigation .logo img {
@@ -329,7 +331,7 @@
       z-index: -1;
     }
     #navigation #navbar-menu.open {
-      height: 22.25rem;
+      height: 23.25rem;
       padding-top: 1.25rem;
       z-index: -100;
     }
@@ -338,6 +340,7 @@
       transform: translateY(0) rotateX(0);
     }
   }
+
   /* Desktop */
   @media only screen and (min-width: 64em) {
     ::-webkit-scrollbar-track {
@@ -820,4 +823,7 @@
       background: #161616;
     }
   }
-  
+    .notLoaded 
+  { 
+    display: none !important; 
+  }

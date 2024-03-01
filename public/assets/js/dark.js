@@ -1,5 +1,3 @@
-
-
 //
 //    The Dark Mode System
 //
@@ -17,7 +15,7 @@ function disableDarkMode() {
 // determines a new users dark mode preferences
 function detectColourScheme() {
   // default to the light theme
-  let theme = 'light';
+  //let theme = 'light';
 
   // check the localstorage for a saved 'theme' variable. if it's there, the user has visited before, so apply the necessary theme choices
   if (localStorage.getItem('theme')) {
@@ -26,6 +24,10 @@ function detectColourScheme() {
   // if it's not there, check to see if the user has applied dark mode preferences themselves in the browser
   else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
     theme = 'dark';
+  }
+  else
+  {
+    theme = 'light';
   }
 
   // if there is no preference set, the default of light will be used. apply accordingly
