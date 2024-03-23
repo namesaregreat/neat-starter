@@ -9,7 +9,7 @@
       --accent: #444444;
     }
     body.dark-mode {
-      background-color: var(--dark);
+      background-color: var(--backgroundColorDark);
     }
     body.dark-mode p,
     body.dark-mode li,

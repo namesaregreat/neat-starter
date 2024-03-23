@@ -37,11 +37,22 @@
   #cards .container-title {
     text-align: center;
     padding: 0 !important;
-    margin-bottom: 40px;
-    font-size: 40px;
     color: var(--headerColor);
     font-weight: 600;
-    line-height: 60px;
+  }
+
+  
+
+  @media only screen and (min-width: 0em){
+    #cards .container-title {
+      font-size: 1.25rem;
+      font-weight: 900;
+    }
+  }
+  @media only screen and (min-width: 48em) {
+    #cards .container-title {
+      font-size: 3rem;
+    }
   }
   
   #cards .card {
@@ -50,6 +61,7 @@
     width: 100%;
     margin-inline: auto;
   }
+  
   
   #cards .container-card {
     position: relative;
@@ -84,19 +96,19 @@
     border-radius: 45px;
   }
   
-  #cards .bg-green-box::after {
+  body.dark-mode #cards .bg-green-box::after {
     background: linear-gradient(71deg, #0d1212, #3da077, #0d1212);
   }
   
-  #cards .bg-white-box::after {
+  body.dark-mode #cards .bg-white-box::after {
     background: linear-gradient(71deg, #121013, #b0afb0, #121013);
   }
   
-  #cards .bg-yellow-box::after {
+  body.dark-mode #cards .bg-yellow-box::after {
     background: linear-gradient(71deg, #110e0e, #afa220, #110e0e);
   }
   
-  #cards .bg-blue-box::after {
+  body.dark-mode #cards .bg-blue-box::after {
     background: linear-gradient(71deg, #0c0a0e, #5f6fad, #0c0a0e);
   }
   
@@ -113,7 +125,7 @@
   #cards .card-description {
     font-weight: 600;
     line-height: 32px;
-    color: hsla(0, 0%, 100%, 0.5);
+    color: hsla(0, 0%, 100%, 0.75);
     font-size: 16px;
     max-width: 470px;
   }

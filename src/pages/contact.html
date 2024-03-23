@@ -73,9 +73,25 @@ eleventyNavigation:
       <!--Phone-->
       <span class="cs-header">Phone</span>
       <a class="cs-link" href="tel:{{ client.phone }}">{{ client.phoneFormatted }}</a>
-      <!--Address-->
-      <span class="cs-header">Fax</span>
-      <a class="cs-link" href="tel:{{ client.fax }}">{{ client.fax }}</a>
+      <div style="margin-top: 10px;">
+        <a href="https://linkedin.com/in/cristian-silviu-patilea-2508b8134" target="_blank" rel="noopener">
+          <img aria-hidden="true"
+               decoding="async"
+               src="/assets/svgs/linkedin_icon_light.svg"
+               alt="appliance"
+               width="48"
+               height="48"/>
+        </a>
+        <a href="https://facebook.com/EdmontonCasinoAdvisor/" target="_blank" rel="noopener">
+          <img aria-hidden="true"
+               decoding="async"
+               src="/assets/svgs/fb_icon_light.svg"
+               alt="appliance"
+               width="42"
+               height="42"
+               style="margin-bottom:1px;"/>
+        </a>
+      </div>
 
       <!-- Background Image-->
       {% image './src/images/contact-side.jpg', 'ace card', 'cs-bg-picture', 'lazy'%}
