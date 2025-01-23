@@ -1,10 +1,8 @@
 ---
-pageName: Association-des-Juristes-d'Expression-Francaise-de-l'Alberta
-quote: I very much appreciated your rigorous professionalism, good humour, calm
-  disposition and patience throughout the casino and with the volunteers. I look
-  forward to working with you in the future.
-author: Denise L.
+pageName: Barrhead-Figure-Skating-Club
+quote: Thank you so much Cristian. We hope to work with you again in the future!
+author: Nichole B.
 tags:
-  - testimonial
-organization: Association des Juristes d'Expression Francaise de l'Alberta
+  - testimonials
+organization: Barrhead Figure Skating Club
 ---
